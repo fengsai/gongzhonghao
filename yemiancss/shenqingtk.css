@@ -1,0 +1,130 @@
+.listall{
+    width: 100%;
+    height: auto;
+
+}
+
+.dianname{
+    width: 100%;
+    height: 1.0933333333rem;
+    color: #333333;
+    font-size: 125%;
+    padding-left: 0.37333333333rem;
+    line-height: 1.0933333333rem;
+}
+
+.shanpinlist{
+    height: 1rem;
+    width: 100%;
+    color: #333333;
+    font-size: 125%;
+}
+
+.jiage{
+    line-height: 1rem;
+    text-align: center;
+}
+
+.heji{
+    height: 1.06666666667rem;
+    font-size: 116.66666667%;
+    color: #666666;
+}
+
+.bottombtn{
+    height: 1.06666666667rem;
+    color: #fff;
+    font-size: 125%;
+    text-align: center;
+    line-height:1.06666666667rem;
+    background-color: #c7161e;
+    margin-top: 2.3333333rem;
+
+}
+
+.btn_fap,.btn_tuik{
+    width: 2rem;
+    height: 0.8rem;
+    background-color: #c7161e;
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+.btn_tuik{
+    margin-right: 0.266666666667rem;
+}
+
+.btn_fap{
+    margin-right:  0.6666666667rem;
+}
+
+.listl{
+    height:1rem;
+    box-sizing: border-box;
+    color: #666666;
+    font-size: 125%;
+
+}
+
+.listl>div:nth-child(1)
+{
+    padding-left: 0.66666666666667rem;
+}
+
+.listl>div:nth-child(3)
+{
+    padding-right: 0.66666666666667rem;
+}
+
+.shuominginput{
+    width: 2.333333333rem;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 0.8rem;
+    border: 1px solid #e5e5e5;
+    color: #666666;
+    font-weight: normal;
+    font-size: 125%;
+    -webkit-appearance:none;
+    text-align: right;
+    transform:scale(0.9);
+}
+
+.tuiksm{
+    width: 8.66666666667rem;
+    height: 1.866666666667rem;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-top: 0.266667rem;
+    padding-left: 0.266667rem;
+    box-sizing: border-box;
+    font-size: 116.66666667%;
+    color: #666666;
+    -webkit-appearance:none;
+}
+
+.shangcimg{
+    height: 2.4rem;
+    width: 8.66666666667rem;
+    margin: 0 auto;
+}
+
+.shangcimg>div{
+    width: 1.73333333333rem;
+    height: 1.7333333333rem;
+    border: 1px dashed #e5e5e5;
+    margin-right: 0.3rem;
+}

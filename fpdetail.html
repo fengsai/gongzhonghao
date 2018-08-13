@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发票详情</title>
+    <script>
+        !function (e) {
+            function t() {
+                var t = r.getBoundingClientRect().width;
+                /T5\//.test(e.navigator.userAgent) && (t = Math.floor(e.screen.width / e.devicePixelRatio)), t / l > 540 && (t = 540 * l);
+                var i = t / 10;
+                r.style.fontSize = i + "px", m.rem = e.rem = i
+            }
+
+            var i, a = e.document, r = a.documentElement, n = a.querySelector('meta[name="viewport"]'), o = a.querySelector('meta[name="flexible"]'), l = 0, s = 0, m = e.flexible || (e.flexible = {}), d = / baiduboxapp\//i.test(e.navigator.userAgent);
+            if (n) {
+                var p = n.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                p && (s = parseFloat(p[1]), l = parseInt(1 / s))
+            } else if (o) {
+                var c = o.getAttribute("content");
+                if (c) {
+                    var u = c.match(/initial\-dpr=([\d\.]+)/), f = c.match(/maximum\-dpr=([\d\.]+)/);
+                    u && (l = parseFloat(u[1]), s = parseFloat((1 / l).toFixed(2))), f && (l = parseFloat(f[1]), s = parseFloat((1 / l).toFixed(2)))
+                }
+            }
+            if (!l && !s) {
+                var v = (e.navigator.appVersion.match(/android/gi), e.navigator.appVersion.match(/iphone/gi)), h = e.devicePixelRatio;
+                l = v ? h >= 3 && (!l || l >= 3) ? 3 : h >= 2 && (!l || l >= 2) ? 2 : 1 : 1, s = 1 / l
+            }
+            if (r.setAttribute("data-dpr", l), !n)if (n = a.createElement("meta"), n.setAttribute("name", "viewport"), n.setAttribute("content", "initial-scale=" + s + ", maximum-scale=" + s + ", minimum-scale=" + s + ", user-scalable=no"), r.firstElementChild)r.firstElementChild.appendChild(n);
+            else {
+                var x = a.createElement("div");
+                x.appendChild(n), a.write(x.innerHTML)
+            }
+            d || e.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(t, 300)
+            }, !1), e.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(t, 300))
+            }, !1), "complete" === a.readyState ? a.body.style.fontSize = 12 * l + "px" : a.addEventListener("DOMContentLoaded", function () {
+                a.body.style.fontSize = 12 * l + "px"
+            }, !1), t(), m.dpr = e.dpr = l, m.refreshRem = t, m.rem2px = function (e) {
+                var t = parseFloat(e) * this.rem;
+                return "string" == typeof e && e.match(/rem$/) && (t += "px"), t
+            }, m.px2rem = function (e) {
+                var t = parseFloat(e) / this.rem;
+                return "string" == typeof e && e.match(/px$/) && (t += "rem"), t
+            }
+        }(window);
+    </script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=3"></script>
+    <link type="text/css" href="css/comm.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="kiben" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <script type="text/javascript">
+        document.write("<script type='text/javascript' src='util/configc.js?v=" + Math.random() + "'><\/script>")
+    </script>
+    <link rel="stylesheet" href="css/comm.css">
+    <script type="text/javascript">
+        document.write("<link rel='stylesheet' href='yemiancss/fpdetail.css?v=" + version + "'>");
+    </script>
+    <style>
+        body{
+            line-height: 1;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="container bx bxv">
+    <div class="listall bx bxv">
+        <div class="shanpinlist bx bxh bxc borboxsize" style="background-color: #c7161e;">
+            <div style="padding-left: 0.6666666667rem;color: #fff;">开票成功!</div>
+            <div class="bxf1 h1 jiage"></div>
+            <div class="shuliang" style="padding-right: 0.6666666667rem; color:#fff;"><span class="add_fs">2018年7月6日 10:48</span></div>
+        </div>
+        <div class="shanpinlist bx bxh bxc borboxsize">
+            <div style="padding-left: 0.6666666667rem;">订单编号</div>
+            <div class="bxf1 h1 jiage"></div>
+            <div class="shuliang" style="padding-right: 0.6666666667rem;">112234243242423424</div>
+        </div>
+        <div class="shanpinlist bx bxh bxc borboxsize">
+            <div style="padding-left: 0.6666666667rem;">实付金额</div>
+            <div class="bxf1 h1 jiage"></div>
+            <div class="shuliang" style="padding-right: 0.6666666667rem;">¥<span class="add_fs">2.50</span></div>
+        </div>
+        <div class="shanpinlist bx bxh bxc borboxsize">
+            <div style="padding-left: 0.6666666667rem;">发票类型</div>
+            <div class="bxf1 h1 jiage"></div>
+            <div class="shuliang" style="padding-right: 0.6666666667rem;">
+                电子增值税普通发票
+            </div>
+        </div>
+        <div class="shanpinlist bx bxh bxc borboxsize">
+            <div style="padding-left: 0.6666666667rem;">发票抬头</div>
+            <div class="bxf1 h1 jiage"></div>
+            <div class="shuliang" style="padding-right: 0.6666666667rem; color: #ababab">上海XXXXX公司</div>
+        </div>
+        <div class="shanpinlist bx bxh bxc borboxsize">
+            <div style="padding-left: 0.6666666667rem;">发票抬头类型</div>
+            <div class="bxf1 h1 jiage"></div>
+            <div class="shuliang" style="padding-right: 0.6666666667rem; color: #ababab">
+                企业
+            </div>
+        </div>
+        <div class="shanpinlist bx bxh bxc borboxsize">
+            <div style="padding-left: 0.6666666667rem;">企业税号</div>
+            <div class="bxf1 h1 jiage"></div>
+            <div class="shuliang" style="padding-right: 0.6666666667rem; color: #ababab">
+                324242424242424232424243242
+            </div>
+        </div>
+        <div class="heji borboxsize bx bxc bxh">
+            <div style="padding-left: 0.6666666667rem;">备注信息:</div>
+            <div class="h1 bxf1"></div>
+        </div>
+        <div class="tuiksm bx bxh" style="height:2.4rem;margin-top: 0.2rem;font-size: 125%;
+        color: #000;">
+dadadadadasdasd
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="util/zepto.min.js"></script>
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="util/comm.js?v='+version+'"><\/script>')
+</script>
+<script type="text/javascript" src="util/MD5.js"></script>
+<!--<script type="text/javascript" src="util/cunxhuinfo.js"></script>-->
+<script type="text/javascript">
+    //    document.write('<script type="text/javascript" src="util/sq.js?v='+version+'"><\/script>')
+</script><script type="text/javascript">
+    document.write("<script type='text/javascript' src='yemianjs/fpdetail.js?v=" + version + "'><\/script>")
+</script>
+</html>
